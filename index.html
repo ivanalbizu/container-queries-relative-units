@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container Queries + Relative Units</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script src="src/js/script.js" defer></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">CSS Units @containers</h1>
+    </header>
+    <p>https://drafts.csswg.org/css-contain-3/#container-lengths</p>
+    <label for="debug">Debug</label>
+    <input type="checkbox" class="debug" id="debug" />
+
+    <div class="grid">
+      <article data-container="card">
+        <div class="card">
+          <figure class="card__img">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="" />
+          </figure>
+          <header class="card__header">
+            <h2 class="title-card">Container card title 01</h2>
+          </header>
+          <main class="card__body">
+            <p class="body-card">Lorem ipsum dolor sit amet consectetur.</p>
+          </main>
+          <footer class="card__footer" data-container="btn">
+            <div class="btn-groups">
+              <button class="btn" type="button">
+                <span
+                  class="iconify"
+                  data-icon="fluent:bookmark-multiple-20-regular"
+                  data-width="20"
+                  data-height="20"
+                ></span>
+                <span>Action 1</span>
+              </button>
+              <button class="btn" type="button">
+                <span
+                  class="iconify"
+                  data-icon="fluent:grid-28-regular"
+                  data-width="20"
+                  data-height="20"
+                ></span>
+                <span>Action 2</span>
+              </button>
+            </div>
+          </footer>
+        </div>
+      </article>
+      <article data-container="card">
+        <div class="card">
+          <figure class="card__img">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="" />
+          </figure>
+          <header class="card__header">
+            <h2 class="title-card">Container card</h2>
+          </header>
+          <main class="card__body">
+            <p class="body-card">Lorem ipsum dolor sit amet consectetur.</p>
+          </main>
+          <footer class="card__footer">
+            <button class="btn" type="button">
+              <span
+                class="iconify"
+                data-icon="fluent:replay-20-regular"
+                data-width="20"
+                data-height="20"
+              ></span
+              ><span>Action</span>
+            </button>
+          </footer>
+        </div>
+      </article>
+      <article data-container="card">
+        <div class="card">
+          <figure class="card__img">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="" />
+          </figure>
+          <header class="card__header">
+            <h2 class="title-card">Container card title 01</h2>
+          </header>
+          <main class="card__body">
+            <p class="body-card">Lorem ipsum dolor sit amet consectetur.</p>
+          </main>
+          <footer class="card__footer">
+            <button class="btn" type="button"><span>Action</span></button>
+          </footer>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid">
+      <article data-container="card">
+        <div class="card">
+          <figure class="card__img">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="" />
+          </figure>
+          <header class="card__header">
+            <h2 class="title-card">Container card title 01</h2>
+          </header>
+          <main class="card__body">
+            <p class="body-card">Lorem ipsum dolor sit amet consectetur.</p>
+          </main>
+          <footer class="card__footer" data-container="btn">
+            <div class="btn-groups">
+              <button class="btn" type="button">Action 1</button>
+              <button class="btn" type="button">Action 2</button>
+            </div>
+          </footer>
+        </div>
+      </article>
+      <article data-container="card">
+        <div class="card">
+          <figure class="card__img">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="" />
+          </figure>
+          <header class="card__header">
+            <h2 class="title-card">Container card</h2>
+          </header>
+          <main class="card__body">
+            <p class="body-card">Lorem ipsum dolor sit amet consectetur.</p>
+          </main>
+          <footer class="card__footer">
+            <button class="btn" type="button"><span>Action</span></button>
+          </footer>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid">
+      <article data-container="card">
+        <div class="card">
+          <figure class="card__img">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="" />
+          </figure>
+          <header class="card__header">
+            <h2 class="title-card">Container card title 01</h2>
+          </header>
+          <main class="card__body">
+            <p class="body-card">Lorem ipsum dolor sit amet consectetur.</p>
+          </main>
+          <footer class="card__footer" data-container="btn">
+            <div class="btn-groups">
+              <button class="btn" type="button">
+                <span
+                  class="iconify"
+                  data-icon="fluent:bookmark-multiple-20-regular"
+                  data-width="20"
+                  data-height="20"
+                ></span>
+                <span>Action 1</span>
+              </button>
+              <button class="btn" type="button">
+                <span
+                  class="iconify"
+                  data-icon="fluent:grid-28-regular"
+                  data-width="20"
+                  data-height="20"
+                ></span>
+                <span>Action 2</span>
+              </button>
+            </div>
+          </footer>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
